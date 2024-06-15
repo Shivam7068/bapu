@@ -29,7 +29,7 @@ const Campus = () => {
                     >
                         <source type='video/mp4' />
                     </video> */}
-                    <img src="/assets/common_img/campus_2.jpg" alt="" className='-z-[10] w-full h-full object-cover top-0 absolute inset-0 rounded-xl' /> alt="" /
+                    <img src="/assets/common_img/campus_2.jpg" alt="" className='-z-[10] w-full h-full object-cover top-0 absolute inset-0 rounded-xl' /> 
                 </motion.div>
 
 
