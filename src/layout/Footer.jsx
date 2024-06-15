@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Link } from 'react-router-dom'
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa"
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaPhoneAlt } from "react-icons/fa"
 import { about, footer, social } from '../data/footerLinks'
 import Whatsapp from './Whatsapp'
 const Footer = () => {
@@ -11,11 +11,33 @@ const Footer = () => {
       <hr className=" border-black sm:mx-auto mt-6" />
 
       <div className="m-auto w-full ">
-        <div className="md:flex md:justify-between my-4">
+        <div className="md:flex md:justify-between my-4 gap-5">
           <div className="mb-6 md:mb-0">
             <Link to={"/"} className="flex items-center justify-center ">
               <img src="/assets/logos/bamchLogo.jpg" className=" h-16 me-3" alt="Logo" />
             </Link>
+
+            <div className='mt-8 mx-5'>
+              <div className='mb-3 md:mb-3 text-sm font-semibold text-gray-700 uppercase dark:text-white'>
+                Contact Us:-
+              </div>
+              <div className='text-[#15803d]'>
+                Bapu Ayurvedic Medical College & Hospital <br />
+                Laadanpur, Kopaganj, Mau (U.P.) - 275101
+              </div>
+
+              <div className='flex gap-3 mt-4'>
+                <div className='flex justify-center items-center text-[#15803d]'>
+                  <FaPhoneAlt />
+
+                </div>
+                <div className='text-[#15803d]'>
+                  <a href="tel:"> +91-7991200379</a> || <a href="tel:">+91-9839383928</a>
+                </div>
+              </div>
+
+
+            </div>
           </div>
 
           {/* Links */}

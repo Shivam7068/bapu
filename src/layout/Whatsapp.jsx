@@ -5,22 +5,19 @@ import { IoSend } from "react-icons/io5";
 import { IoMdCloseCircle } from "react-icons/io";
 
 const Whatsapp = () => {
-    console.log("ok");
     const [msg, setMsg] = useState("Hello!");
     const [open, setOpen] = useState(false);
-    console.log(open);
     const handleClose = () => {
         setOpen(!open);
     };
 
     const handleWA = (e) => {
         setOpen(!open);
-        location.href = `https://api.whatsapp.com/send?phone=919528024473&text=${msg}`;
+        location.href = `https://api.whatsapp.com/send?phone=917991200379&text=${msg}`;
     };
 
     const handleChange = (e) => {
         setMsg(e.target.value);
-        console.log(e.target.value);
     };
 
     const handleKeyPress = (e) => {

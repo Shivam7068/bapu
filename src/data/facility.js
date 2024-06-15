@@ -26,7 +26,7 @@ export const facility = [
     },
     {
         img: "/assets/facility/classes.jpg",
-        title: "HI-Tech Classes",
+        title: "Hi-Tech Classes",
         para: "Step into the future of learning in our state-of-the-art hi-tech classrooms. Equipped with cutting-edge technology and interactive tools, our classrooms foster dynamic engagement, collaborative exploration, and immersive learning experiences. From multimedia presentations to virtual simulations, our innovative approach to education prepares students for success in an ever-evolving digital landscape. "
     },
 ]

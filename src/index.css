@@ -56,7 +56,33 @@
   }
 }
 
+.marquee-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* Adjust gap as needed */
+}
 
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+  /* Adjust duration as needed */
+}
+.marquee-container:hover .marquee {
+  animation-play-state: paused; 
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 @tailwind components;
 @tailwind utilities;

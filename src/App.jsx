@@ -9,6 +9,8 @@ import {
 import Home from "./pages/Home";
 import Loader from './component/common_comp/Loader';
 import Whatsapp from './layout/Whatsapp';
+import Applynow from './pages/Applynow';
+import Facility from './component/course/Facility';
 const Footer = lazy(() => import("./layout/Footer"));
 const Navbar = lazy(() => import("./layout/Navbar"));
 const About = lazy(() => import("./pages/About"));
@@ -21,13 +23,14 @@ const Registrar = lazy(() => import("./pages/Registrar"));
 const ViceChancellor = lazy(() => import("./pages/ViceChancellor"));
 
 const App = () => {
-
   return (
     <>
+
       <Router>
         <Navbar />
         <Routes >
           <Route exact path='/' element={<Home />}></Route>
+          <Route exact path='/applynow' element={<Applynow />}></Route>
 
           <Route exact path='/about' element={
             <Suspense fallback={<Loader />}>
@@ -42,6 +45,12 @@ const App = () => {
           </Route>
 
           <Route exact path='/about/course' element={
+            <Suspense fallback={<Loader />}>
+              <Course />
+            </Suspense>}>
+          </Route>
+
+          <Route exact path='/facility' element={
             <Suspense fallback={<Loader />}>
               <Course />
             </Suspense>}>
@@ -78,8 +87,10 @@ const App = () => {
           </Route>
 
         </Routes>
-        <Whatsapp/>
+        <Whatsapp />
         <Footer />
+
+
       </Router>
     </>
   )

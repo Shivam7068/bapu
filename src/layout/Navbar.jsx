@@ -55,6 +55,7 @@ const Navbar = () => {
             }
 
             {/* <li className='hover:bg-[#49b845] hover:text-white text-green-700 p-2'>Student Corner</li> */}
+            <Link to="facility" className='hover:bg-[#49b845] hover:text-white text-green-700 p-2'>Facilities</Link>
             <Link to="Gallery" className='hover:bg-[#49b845] hover:text-white text-green-700 p-2'>Gallery</Link>
           </ul>
         </div>
