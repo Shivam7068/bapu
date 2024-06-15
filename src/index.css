@@ -1,0 +1,62 @@
+@tailwind base;
+
+:root {
+  --primary: #e5e7eb;
+  --secondary: cornflowerblue;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 13px;
+  height: 30px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
+}
+
+.container:hover .img {
+  transform: translateY(-30px);
+  transition: ease-in-out .5s;
+}
+
+.slick-slide>div {
+  margin: 0 5px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: red !important;
+}
+
+@keyframes morph {
+
+  0% {
+    border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 44% 56% 34% 56% / 70% 50% 50% 20%;
+  }
+
+  100% {
+    border-radius: 63% 37% 52% 48% / 52% 69% 31% 48%
+  }
+}
+
+
+
+@tailwind components;
+@tailwind utilities;
