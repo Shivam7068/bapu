@@ -30,9 +30,9 @@ const TopBar = () => {
                 </div>
 
                 <div className='flex items-center text-white text-bold text-xl gap-10 '>
-                    <Link to={"/applynow"} className='bg-white p-3 text-green-900 font-semibold rounded-lg'>
+                    <a href={"/applynow"} className='bg-white p-3 text-green-900 font-semibold rounded-lg'>
                         Apply Now
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>

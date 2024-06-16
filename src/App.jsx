@@ -1,8 +1,8 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useEffect, useState } from 'react';
 import {
   Route,
   BrowserRouter as Router,
-  Routes,
+  Routes
 } from 'react-router-dom';
 
 // importing pages 
@@ -23,6 +23,7 @@ const Registrar = lazy(() => import("./pages/Registrar"));
 const ViceChancellor = lazy(() => import("./pages/ViceChancellor"));
 
 const App = () => {
+
   return (
     <>
 
@@ -88,7 +89,7 @@ const App = () => {
 
         </Routes>
         <Whatsapp />
-        {window.location.pathname != '/applynow' && <Footer />}
+        {window.location.pathname !== '/applynow' && <Footer />}
 
 
       </Router>
