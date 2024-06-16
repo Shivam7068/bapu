@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="marquee-container bg-gray-600 p-3 text-lg text-white">
           <div className="marquee inline-block cursor-pointer">
             {[...Array(20)].map((_, i) => (
-              <span key={i} className="">Admissions Open 2024 <span className='px-10 mx-40 text-yellow-500'> Apply Now </span></span>
+              <span key={i} className="">Admissions Open 2024 <a href='/applynow' className='px-10 mx-40 text-yellow-500'> Apply Now </a></span>
             ))}
           </div>
         </div>
@@ -27,7 +27,7 @@ const Hero = () => {
         <source type='video/mp4' />
       </video>
 
-      <div className='z-[10] flex justify-center flex-col items-center  h-full gap-5 mask relative'>
+      <div className='z-[10] relative flex justify-center flex-col items-center  h-full gap-5 mask '>
         <h1 className='md:text-5xl text-3xl font-extrabold text-black'>
           Bapu <span className='text-green-900'>Ayurvedic</span> College & Hospital
         </h1>
@@ -45,9 +45,14 @@ const Hero = () => {
           </h2>
 
         </div>
+        <a href='/applynow'
+          className="absolute bottom-[78vh] z-[999] right-2 bg-black text-white px-4 py-2 rounded origin-bottom-right -rotate-90 animate-[pulse_1s_infinite] "
+        >
+          Apply Now
+        </a>
       </div>
 
-
+      
 
     </section>
   )

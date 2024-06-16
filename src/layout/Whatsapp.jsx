@@ -28,7 +28,7 @@ const Whatsapp = () => {
 
     return (
         <div className="z-[999]">
-            <div className="wa-container">
+            <div className="wa-container bg-white rounded-full">
                 <div className="wa-wrapper">
                     <div
                         className={`wa-icon ${open ? "hide" : "show"}`}
