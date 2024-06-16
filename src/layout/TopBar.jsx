@@ -29,7 +29,7 @@ const TopBar = () => {
                     </a>
                 </div>
 
-                <div className='flex md:hidden items-center text-white text-bold text-xl gap-10 md:m-0 m-auto'>
+                <div className='md:flex hidden items-center text-white text-bold text-xl gap-10 md:m-0 m-auto'>
                     <a href={"/applynow"} className='bg-white p-3 text-green-900 font-semibold rounded-lg'>
                         Apply Now
                     </a>

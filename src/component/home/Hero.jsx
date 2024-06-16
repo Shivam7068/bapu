@@ -46,13 +46,13 @@ const Hero = () => {
 
         </div>
         <a href='/applynow'
-          className="absolute bottom-[78vh] z-[999] right-2 bg-black text-white px-4 py-2 rounded origin-bottom-right -rotate-90 animate-[pulse_1s_infinite] "
+          className="absolute md:hidden bottom-[78vh] z-[999] right-2 bg-black text-white px-4 py-2 rounded origin-bottom-right -rotate-90  "
         >
           Apply Now
         </a>
       </div>
 
-      
+
 
     </section>
   )
