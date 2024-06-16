@@ -88,7 +88,7 @@ const App = () => {
 
         </Routes>
         <Whatsapp />
-        <Footer />
+        {window.location.pathname != '/applynow' && <Footer />}
 
 
       </Router>
